@@ -31,3 +31,10 @@ This project implements a UART transmitter and receiver with configurable baud r
 ---
 
 ## ✦ Project Structure
+- uart_rx.sv        — UART receiver RTL
+- uart_tx.sv        — UART transmitter RTL
+- uart_top.sv       — top-level UART wrapper
+- uart_if.sv        — SystemVerilog interface bundling all DUT signals
+- uvm_tb/
+  uvm.sv          — transaction, sequence, driver, monitor, scoreboard, agent, env, test
+  tb_top.sv       — top-level testbench module (clock gen, uvm_config_db::set, run_test)
